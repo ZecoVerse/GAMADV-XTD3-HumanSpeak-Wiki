@@ -1,3 +1,8 @@
+---
+layout: default
+title: Aliases
+---
+
 # Aliases - Human-Friendly Guide
 
 - [Introduction](#introduction)

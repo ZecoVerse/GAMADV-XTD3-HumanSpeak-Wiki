@@ -1,3 +1,8 @@
+---
+layout: default
+title: Drive Items
+---
+
 # Drive Items - Human-Friendly Guide
 
 This document explains how to reference Google Drive items in GAMADV-XTD3 commands.

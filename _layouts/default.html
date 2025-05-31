@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body { margin: 0; font-family: sans-serif; }
+      .container { display: flex; min-height: 100vh; }
+      .content { flex-grow: 1; padding: 20px; }
+      .sidebar { width: 220px; border-left: 1px solid #eee; padding: 20px; background-color: #f9f9f9; }
+      @media (max-width: 768px) {
+        .container { flex-direction: column; }
+        .sidebar { width: 100%; border-left: none; border-top: 1px solid #eee; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <main class="content">
+        {{ content }}
+      </main>
+      <aside class="sidebar">
+        {% include _sidebar.md %}
+      </aside>
+    </div>
+  </body>
+</html>
