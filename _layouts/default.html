@@ -20,7 +20,8 @@
         {{ content }}
       </main>
       <aside class="sidebar">
-        {% include _sidebar.md | markdownify %}
+        {% capture sidebar_content %}{% include _sidebar.md %}{% endcapture %}
+        {{ sidebar_content | markdownify }}
       </aside>
     </div>
   </body>
